@@ -1,4 +1,4 @@
-module github.com/lazy1ronf4ur/go-infra
+module github.com/lazyironf4ur/go-infra
 
 go 1.21.1
 

@@ -8,9 +8,9 @@ import (
 	"os"
 	"time"
 
+	"github.com/lazyironf4ur/go-infra/util"
 	"gorm.io/gorm/logger"
 	"gorm.io/gorm/utils"
-	"github.com/lazy1ronf4ur/go-infra/util"
 )
 
 const (
@@ -33,10 +33,9 @@ const (
 type gLogger struct {
 	logger.Writer
 	logger.Config
-	infoStr, warnStr, errStr string
+	infoStr, warnStr, errStr            string
 	traceStr, traceErrStr, traceWarnStr string
 }
-
 
 var (
 	glog = new(log.New(os.Stdout, "\r\n", log.LstdFlags), logger.Config{
@@ -46,7 +45,6 @@ var (
 		Colorful:                  true,
 	})
 )
-
 
 func new(writer logger.Writer, config logger.Config) logger.Interface {
 	var (
@@ -135,9 +133,7 @@ func (g gLogger) Trace(ctx context.Context, begin time.Time, fc func() (sql stri
 	}
 }
 
-
 func formatTraceId(ctx context.Context) string {
 	a := ctx.Value(util.Trace_key)
 	return fmt.Sprintf(trace_format, a.(string))
 }
-

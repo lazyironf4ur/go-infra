@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/lazy1ronf4ur/go-infra/util"
+	"github.com/lazyironf4ur/go-infra/util"
 )
 
 type cLog struct {

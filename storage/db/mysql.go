@@ -3,10 +3,10 @@ package db
 import (
 	"fmt"
 
+	"github.com/lazyironf4ur/go-infra/common"
+	"github.com/lazyironf4ur/go-infra/conf"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
-	"github.com/lazy1ronf4ur/go-infra/common"
-	"github.com/lazy1ronf4ur/go-infra/conf"
 )
 
 var MysqlDB *gorm.DB

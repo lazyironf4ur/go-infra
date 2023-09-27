@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/lazy1ronf4ur/go-infra/conf"
-	"github.com/lazy1ronf4ur/go-infra/util"
+	"github.com/lazyironf4ur/go-infra/conf"
+	"github.com/lazyironf4ur/go-infra/util"
 )
 
 //traceid: 8位机器ip + 模块名 + timestamp + goroutineid

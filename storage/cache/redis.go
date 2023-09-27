@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/go-redis/redis/v8"
-	"github.com/lazy1ronf4ur/go-infra/common"
-	"github.com/lazy1ronf4ur/go-infra/conf"
+	"github.com/lazyironf4ur/go-infra/common"
+	"github.com/lazyironf4ur/go-infra/conf"
 )
 
 var RedisClient *redis.Client
